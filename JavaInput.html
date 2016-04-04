@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript<h2>
+	<p>input 1 to 10:</p>
+	<input id="num">
+    <button type="button" onclick="myClick()">Enter</button>
+
+ <p id="demo"></p>
+
+ <script>
+ function myClick(){
+ 	var x,text;
+ 	x=document.getElementById("num").value;
+ 	if(isNaN(x)||x<1||x>10){
+ 		text="Input not vaild";
+ 	}
+ 	else{
+ 		
+ 		text="Input is ok";
+ 	}
+    document.getElementById("demo").innerHTML=text;
+ }
+ </script>
+</body>
+</html>
